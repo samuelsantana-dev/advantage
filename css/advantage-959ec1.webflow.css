@@ -27,6 +27,24 @@
   margin-right: auto;
   display: block;
 }
+.features-arrow-image {
+  width: 30px;
+  height: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  .features-arrow-image {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .features-arrow-image {
+    width: 15px;
+    height: 15px;
+  }
+}
 
 @media screen and (max-width: 991px) {
   .w-layout-blockcontainer {
