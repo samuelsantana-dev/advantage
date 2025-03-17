@@ -1,0 +1,9 @@
+
+/* Para telas maiores que 768px */
+@media (max-width: 768px) {
+    .teste {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+}

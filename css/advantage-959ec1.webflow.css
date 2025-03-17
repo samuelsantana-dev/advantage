@@ -27,28 +27,15 @@
   margin-right: auto;
   display: block;
 }
-.features-arrow-image {
-  width: 30px;
-  height: 30px;
-}
-
-@media only screen and (max-width: 768px) {
-  .features-arrow-image {
-    width: 20px;
-    height: 20px;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .features-arrow-image {
-    width: 15px;
-    height: 15px;
-  }
-}
 
 @media screen and (max-width: 991px) {
   .w-layout-blockcontainer {
     max-width: 728px;
+  }
+  
+   .metrics-text {
+    font-size: 2rem;
+    line-height: 6.5rem;
   }
 }
 
@@ -2811,6 +2798,11 @@ blockquote {
     line-height: 2rem;
     top: -.3rem;
   }
+  
+  .metrics-text {
+    font-size: 2rem;
+    line-height: 6.5rem;
+  }
 
   blockquote {
     padding: .5rem 0 .5rem 1.5rem;
@@ -3225,6 +3217,8 @@ blockquote {
   }
 
   .card-flex {
+    /* flex-direction: row-reverse;  */
+    flex-direction: column-reverse;
     grid-column-gap: .5rem;
     grid-row-gap: .5rem;
     flex-flow: column;
@@ -3389,7 +3383,7 @@ blockquote {
   }
 
   .metrics-text {
-    font-size: 4rem;
+    font-size: 2rem;
     line-height: 6.5rem;
   }
 
@@ -4563,6 +4557,15 @@ blockquote {
   .cut-out-flex {
     display: none;
   }
+
+    .card-flex > .features-image-wrapper:first-child {
+      order: 2;
+  }
+
+  .card-flex > .features-image-wrapper:first-child {
+      order: 1;
+  }
+
 
   .card-flex {
     justify-content: center;
